@@ -1,0 +1,10 @@
+<div class="img">
+  <img src="https://www1.lovethatdesign.com/wp-content/uploads/2019/03/Love-that-Design-NOVO-05.jpg" alt="">
+</div>
+
+
+<div class="container mt-4">
+  <% @lists.each do |list|%>
+  <p><%= link_to list.name, list_path(list)  %></p>
+  <% end %>
+</div>

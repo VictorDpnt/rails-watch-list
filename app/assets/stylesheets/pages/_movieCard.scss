@@ -1,0 +1,63 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+
+  .card {
+    width: 350px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+
+    .img {
+      width: 100%;
+      height: 200px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+      }
+    }
+  }
+
+  .title-rating {
+    display: flex;
+
+    .title {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .rating {
+      color: grey;
+    }
+  }
+
+  .overview {
+    width: 100%;
+    height: 150px;
+
+    .card-text {
+      font-size: small;
+    }
+  }
+
+  .comment-delete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .add-delete {
+    margin-right: 5px important;
+  }
+}
+
+.add-delete-list {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
